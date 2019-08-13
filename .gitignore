@@ -1,0 +1,8 @@
+# Bin
+ft_ssl_md5
+
+# Obj
+*.o
+
+# Lib
+libft
