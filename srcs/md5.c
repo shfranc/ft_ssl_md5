@@ -11,23 +11,17 @@ static void md5_output(char *digest)
 void	ft_md5(char *message)
 {
 	uint32_t		shift[64];
-	// uint32_t		K[64];
+	uint32_t		radians[64];
 	// uint32_t		a;
 	// uint32_t		b;
 	// uint32_t		c;
 	// uint32_t		d;
 
 	init_shifts_per_round(shift);
+	print_shift(shift);
 
-	int i = 0;
-	while (i < 64)
-	{
-		ft_putnbr(shift[i]);
-		ft_putchar(' ');
-		if (i && (i % 16) == 15)
-			ft_putchar('\n');
-		i++;
-	}
+	init_radians(radians);
+	print_radians(radians);
 
 	md5_output(message);
 }

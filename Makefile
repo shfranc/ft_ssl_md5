@@ -16,6 +16,7 @@ SRCS = $(addprefix $(PATH_SRCS)/,\
 	md5_func.c \
 	md5_constants.c \
 	utils.c \
+	debug.c \
 	)
 
 PATH_OBJS = objs

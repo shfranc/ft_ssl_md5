@@ -14,5 +14,10 @@ uint32_t	H(uint32_t b, uint32_t c, uint32_t d);
 uint32_t	I(uint32_t b, uint32_t c, uint32_t d);
 
 void		init_shifts_per_round(uint32_t *shift);
+void		init_radians(uint32_t *radians);
+
+// debug
+void		print_shift(uint32_t *shift);
+void		print_radians(uint32_t *radians);
 
 #endif

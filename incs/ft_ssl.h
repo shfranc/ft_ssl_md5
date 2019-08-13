@@ -3,6 +3,7 @@
 
 # include "libft.h"
 # include "ft_md5.h"
+# include <math.h>
 
 # define	NB_HASH_ALGO		1
 
