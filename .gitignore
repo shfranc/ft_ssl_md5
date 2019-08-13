@@ -6,3 +6,6 @@ ft_ssl_md5
 
 # Lib
 libft
+
+# Mac OS X
+.DS_Store
