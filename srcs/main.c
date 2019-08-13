@@ -9,9 +9,22 @@ void	usage(char *prog)
 
 int		main(int ac, char **av)
 {
+	t_ex_ret	ret;
+	int			i;
+	
+	ret = SUCCESS;
 	if (ac <= 1)
 		usage(av[0]);
 	else
-		ft_putendl(av[1]);
-	return (0);
+	{
+		i = 2;
+		while (av[i])
+		{
+			ft_putendl(av[1]);
+			ret = (run_hash_algo(av[1], av[i]) == FAILURE) ? FAILURE : 0;
+			i++;
+		}
+		return (ret);
+	}
+	return (ret);
 }

@@ -11,6 +11,9 @@ INCS = incs $(PATH_LIB)/includes
 PATH_SRCS = srcs
 SRCS = $(addprefix $(PATH_SRCS)/,\
 	main.c \
+	algo.c \
+	md5.c \
+	utils.c \
 	)
 
 PATH_OBJS = objs
