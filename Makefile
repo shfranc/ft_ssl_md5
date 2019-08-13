@@ -14,6 +14,7 @@ SRCS = $(addprefix $(PATH_SRCS)/,\
 	algo.c \
 	md5.c \
 	md5_func.c \
+	md5_constants.c \
 	utils.c \
 	)
 

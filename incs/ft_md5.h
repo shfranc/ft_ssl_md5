@@ -13,4 +13,6 @@ uint32_t	G(uint32_t b, uint32_t c, uint32_t d);
 uint32_t	H(uint32_t b, uint32_t c, uint32_t d);
 uint32_t	I(uint32_t b, uint32_t c, uint32_t d);
 
+void		init_shifts_per_round(uint32_t *shift);
+
 #endif
