@@ -1,10 +1,16 @@
 #ifndef FT_MD5_H
 # define FT_MD5_H
 
-#define INIT_DATA_A (uint32_t)0x67452301
-#define INIT_DATA_B (uint32_t)0xefcdab89
-#define INIT_DATA_C (uint32_t)0x98badcfe
-#define INIT_DATA_D (uint32_t)0x10325476
+#define CHUNK_LEN_BITS		512
+#define CHUNK_LEN_BYTES		CHUNK_LEN_BITS / 8
+
+#define ONE_BIT				(unsigned char)(1 << 7)
+
+#define INIT_DATA_A 		0x67452301
+#define INIT_DATA_B 		0xefcdab89
+#define INIT_DATA_C 		0x98badcfe
+#define INIT_DATA_D 		0x10325476
+
 
 void		ft_md5(char *message);
 

@@ -46,6 +46,7 @@ class MD5(object):
         # Convert the string to a bit array.
         bit_array = bitarray(endian="big")
         bit_array.frombytes(cls._string.encode("utf-8"))
+        print(bit_array)
 
         # Pad the string with a 1 bit and as many 0 bits required such that
         # the length of the bit array becomes congruent to 448 modulo 512.
@@ -58,7 +59,7 @@ class MD5(object):
 
         # For the remainder of the MD5 algorithm, all values are in
         # little endian, so transform the bit array to little endian.
-        # print("step 1")
+        print("step 1", bitarray(bit_array, endian="little"))
         # print (binascii.hexlify(bitarray(bit_array, endian="little").tobytes()))
         return bitarray(bit_array, endian="little")
 

@@ -20,7 +20,6 @@ int		main(int ac, char **av)
 		i = 2;
 		while (av[i])
 		{
-			ft_putendl(av[1]);
 			ret = (run_hash_algo(av[1], av[i]) == FAILURE) ? FAILURE : 0;
 			i++;
 		}

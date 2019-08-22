@@ -4,7 +4,6 @@ static void    init_hash_algo(t_cipher_table *algo_table)
 {
 	if (algo_table[0].name)
 		return ; 
-	ft_putendl("init algo_table table");
 	algo_table[0].name = "md5";
 	algo_table[0].hash_func = &ft_md5;
 }
